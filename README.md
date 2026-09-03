@@ -39,7 +39,7 @@ It also ships detectors written specifically for SPA frameworks, not just generi
 
 Run against a target with hardcoded secrets in its production JS bundle:
 
-```
+```sh
 $ python3 spafox.py -u https://target.example/
 
 ┌─┐┌─┐┌─┐┌─┐┌─┐─┐ ┬
