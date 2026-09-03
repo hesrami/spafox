@@ -140,14 +140,14 @@ Batch mode writes a JSON + HTML report per target, a `MASTER_REPORT` combining a
 | Multi-target batch mode with master report | ✅ | — | — |
 | Built-in HTML report | ✅ | — | — |
 
-The trade off here for comparison if you're interested in that sorta thing: jsluice's tree-sitter approach understands JS structure, so it can match values by how they're *used* rather than just how they look (aka regex), which generally means fewer false positives than a regex engine like SPAFox's or jsleak's. SPAFox's main pros is the live-crawl + SPA-specific detection, not raw match precision.
+The trade off here for comparison if you're interested in that sorta thing: jsluice's tree-sitter approach understands JS structure, so it can match values by how they're *used* rather than just how they look (aka regex), which generally means fewer false positives than a regex engine like SPAFox's or jsleak's. SPAFox's main pros is the live-crawl + SPA-specific detection + batch auditing JS files across hundreds of domain, not raw match precision.
 
 ## Limitations
 
 - Regex-based detection — expect some false positives, especially on minified/obfuscated bundles. Triage findings manually, especially via the HTMl report view which I highly recommend.
 - No live validation of discovered secrets (e.g. no calls to confirm a key is actually active).
 - Sourcemap references are fetched and scanned as text but not parsed back into original source files yet.
-- This tool only has features I needed at the moment of urgency for large scale JS file audits, you're welcome to fork.
+- This tool only has features I needed at the moment of urgency for large scoped JS file audits which existing tools didn't quite seem to do, you're welcome to fork.
 
 ## Disclaimer
 
