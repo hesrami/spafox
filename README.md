@@ -140,7 +140,7 @@ Batch mode writes a JSON + HTML report per target, a `MASTER_REPORT` combining a
 | Multi-target batch mode with master report | ✅ | — | — |
 | Built-in HTML report | ✅ | — | — |
 
-Worth being upfront about the trade-off: jsluice's tree-sitter approach understands JS structure, so it can match values by how they're *used* rather than just how they look, which generally means fewer false positives than a regex engine like SPAFox's or jsleak's. SPAFox's edge is the live-crawl + SPA-specific detection, not raw match precision.
+The trade off here for comparison if you're interested in that sorta thing: jsluice's tree-sitter approach understands JS structure, so it can match values by how they're *used* rather than just how they look (aka regex), which generally means fewer false positives than a regex engine like SPAFox's or jsleak's. SPAFox's main pros is the live-crawl + SPA-specific detection, not raw match precision.
 
 ## Limitations
 
