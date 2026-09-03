@@ -144,14 +144,15 @@ Worth being upfront about the trade-off: jsluice's tree-sitter approach understa
 
 ## Limitations
 
-- Regex-based detection — expect some false positives, especially on minified/obfuscated bundles. Triage findings manually.
+- Regex-based detection — expect some false positives, especially on minified/obfuscated bundles. Triage findings manually, especially via the HTMl report view which I highly recommend.
 - No live validation of discovered secrets (e.g. no calls to confirm a key is actually active).
 - Sourcemap references are fetched and scanned as text but not parsed back into original source files yet.
+- This tool only has features I needed at the moment of urgency for large scale JS file audits, you're welcome to fork.
 
 ## Disclaimer
 
-SPAFox is intended for authorized security testing and bug bounty work only. Scanning targets without permission may be illegal in your jurisdiction. The author accepts no liability for misuse.
+SPAFox is intended for authorized security testing and bug bounty work only. Scanning targets without permission may be illegal in your jurisdiction. The author accepts no liability for misuse but have fun and reach out if it's of any help to you on your engagement/hunting ;)
 
 ## Author
 
-rami (Daniel J.)
+rami/akanbi (Daniel J.)
