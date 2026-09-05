@@ -6,6 +6,8 @@ SPAFox is a quick-and-dirty tool born from equal parts necessity and curiosity, 
 
 It crawls a live SPA, follows Webpack chunks and dynamic imports to reach lazy-loaded JS bundles most scanners miss, and audits both external files and inline <script> blocks against a library of secret and framework exposure patterns. Results are exported to the console, raw JSON, or a styled HTML report, and built-in batching lets you run entire bug-bounty or pentest scope lists in one go.
 
+Realistically, this is a usage scenario where it's found a key that could be used for privileged actions on an API leading to a critical vulnerability on a bug bounty program:
+
 ![screenshot](docs/screenshot.png)
 
 
